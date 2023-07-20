@@ -9,9 +9,9 @@
         include_once("config.php");
                 
         // Insert user data into table
-        $result = mysqli_query($mysqli, "INSERT INTO users(username,password) VALUES('$username','$password')");
+        $result = mysqli_query($mysqli, "INSERT INTO users(username,pass) VALUES('$username','$password')");
         
-        // Show message when user added
-        echo "User added successfully.";
+        // redirect to login page
+        header('Location: http://localhost/milestoneproject/login.html');
     }
 ?>

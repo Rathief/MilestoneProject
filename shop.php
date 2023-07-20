@@ -17,7 +17,7 @@
         <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
           <li><a href="index.html" class="nav-link px-2 link-body-emphasis">Home</a></li>
           <li><a href="game.html" class="nav-link px-2 link-body-emphasis">Game</a></li>
-          <li><a href="shop.html" class="nav-link px-2 link-body-emphasis">Shop</a></li>
+          <li><a href="shop.html" class="nav-link px-2 link-body-emphasis">Gallery</a></li>
           <li><a href="about.html" class="nav-link px-2 link-body-emphasis">About Us</a></li>
           <li><a href="contact.html" class="nav-link px-2 link-body-emphasis">Contact Us</a></li>
         </ul>
@@ -40,12 +40,14 @@
   <main>
       <div class="row">
           <div class="col">
+            <?php 
+            ?>
               <div class="card">
                   <svg class="bd-placeholder-img card-img-top" width="100%" height="180" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#868e96"></rect><text x="50%" y="50%" fill="#dee2e6" dy=".3em">Image cap</text></svg>
                   <div class="card-body">
-                    <h5 class="card-title">Easy Challenge</h5>
-                    <p class="card-text">Challenge Description here.</p>
-                    <button data-toggle="modal" data-target="#battle-window" class="btn btn-danger" onclick="battle('easy')">Battle</button>
+                    <h5 class="card-title">Knight</h5>
+                    <p class="card-text">Unit Description here.</p>
+                    <button class="btn btn-success" onclick="">Buy</button>
                   </div>
               </div>
           </div>
@@ -53,33 +55,13 @@
               <div class="card">
                   <svg class="bd-placeholder-img card-img-top" width="100%" height="180" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#868e96"></rect><text x="50%" y="50%" fill="#dee2e6" dy=".3em">Image cap</text></svg>
                   <div class="card-body">
-                    <h5 class="card-title">Hard Challenge</h5>
-                    <p class="card-text">Challenge Description here.</p>
-                    <button data-toggle="modal" data-target="#battle-window" class="btn btn-danger" onclick="battle('hard')">Battle</button>
+                    <h5 class="card-title">Wizard</h5>
+                    <p class="card-text">Unit Description here.</p>
+                    <button class="btn btn-success" onclick="">Buy</button>
                   </div>
               </div>
           </div>
       </div>
-      <!-- modal for showing battle -->
-      <div id="battle-window" class="modal" tabindex="-1" role="dialog" aria-hidden="true">
-          <div class="modal-dialog" role="document">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title">Modal title</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-                </button>
-              </div>
-              <div class="modal-body">
-                <p>Modal body text goes here.</p>
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-primary">Save changes</button>
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-              </div>
-            </div>
-          </div>
-        </div>
   </main>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 </body>
