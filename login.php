@@ -74,9 +74,9 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                     $login_err = "Invalid username.";
                 }
             } else{
-                echo "Oops! Something went wrong. Please try again later.";
+                $login_err = "Oops! Something went wrong. Please try again later.";
             }
-
+            echo $login_err;
             // Close statement
             mysqli_stmt_close($stmt);
         }
