@@ -8,10 +8,9 @@ const levels = {
 }
 function battle(unit_data, levelName){
     let level = levels[levelName]
-    while(level.length){
-        let enemy = enemies[level.shift()-1]
+    for (let i = 0; i < level.length; i++) {
+        let enemy = enemies[level[i]-1];
         let enemy_hp = enemy["hp"]
-        console.log(enemy)
         while(unit_data["base_hp"]>0 && enemy_hp>0){
             unit_data["base_hp"] -= enemy["att"]
             enemy_hp -= unit_data["base_att"]

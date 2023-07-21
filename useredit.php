@@ -16,7 +16,7 @@ if(isset($_POST['update']))
     $result = mysqli_query($mysqli, "UPDATE users SET username='$username',pass='$pass',admin=$admin,currency=$currency WHERE user_id=$id");
     
     // Redirect to homepage to display updated user in list
-    header("Location: index.php");
+    header("Location: usercrud.php");
 }
 ?>
 <?php
@@ -44,7 +44,7 @@ while($user_data = mysqli_fetch_array($result))
     <a href="index.php">Home</a>
     <br/><br/>
     
-    <form name="update_user" method="post" action="edit.php">
+    <form name="update_user" method="post" action="useredit.php">
         <table border="0">
             <tr> 
                 <td>Username</td>
